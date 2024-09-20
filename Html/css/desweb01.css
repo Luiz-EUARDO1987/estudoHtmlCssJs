@@ -1,0 +1,101 @@
+/* Estilização dos botões */
+.botao {
+    /* Cor de fundo dos botões */
+    background-color: #4CAF50;
+    
+    /* Cor do texto dos botões (branco) */
+    color: #fff;
+    
+    /* Preenchimento interno dos botões (10px nas partes superior/inferior, 20px nas laterais) */
+    padding: 10px 20px;
+    
+    /* Remove qualquer borda padrão do botão */
+    border: none;
+    
+    /* Bordas arredondadas com um raio de 5px */
+    border-radius: 5px;
+    
+    /* O cursor muda para "pointer" ao passar o mouse sobre o botão (indica interatividade) */
+    cursor: pointer;
+}
+
+/* Estilo do botão ao passar o mouse (hover) */
+.botao:hover {
+    /* Cor de fundo mais escura ao passar o mouse (efeito de hover) */
+    background-color: #3e8e41;
+}
+
+/* Estilização do contêiner de grade */
+.grade {
+    /* Exibe os elementos filhos em um layout flexível (flexbox) */
+    display: flex;
+    
+    /* Alinha o conteúdo da grade ao centro, horizontalmente */
+    justify-content: center;
+    
+    /* Define a direção dos itens como uma linha (os itens são dispostos em uma linha horizontal) */
+    flex-direction: row;
+    
+    /* Altura da grade definida como 100% da altura da viewport */
+    height: 100vh;
+    
+    /* Largura da grade definida como 100% da largura da viewport */
+    width: 100vh;
+    
+    /* Espaçamento (gap) de 10px entre os itens da grade */
+    gap: 10%;
+}
+
+/* Estilização do corpo da página */
+body {
+    /* Cor de fundo da página (azul) */
+    background-color: blue;
+}
+
+/* Estilização do contêiner de lista de produtos */
+#listaProduto {
+    /* Borda ao redor da lista de produtos, com 5px de largura e cor preta */
+    border: 5px solid black;
+    
+    /* Tamanho da fonte definido como grande */
+    font-size: large;
+    
+    /* Cor de fundo da lista de produtos (aquamarine) */
+    background-color: aquamarine;
+    
+    /* Centraliza o contêiner horizontalmente */
+    margin: auto;
+    
+    /* Preenchimento interno de 10% em todos os lados */
+    padding: 10%;
+    
+    /* Usa o layout flexbox para os itens dentro da lista de produtos */
+    display: flex;
+    
+    /* Define a direção dos itens dentro da lista como uma coluna (empilhados verticalmente) */
+    flex-direction: column;
+    
+    /* Largura do contêiner ajustada para ocupar 100% */
+    width: 100%;
+}
+
+/* Estilização do contêiner de lista de preços */
+#listaPreço {
+    /* Preenchimento interno de 9% em todos os lados */
+    padding: 9%;
+    
+    /* Borda ao redor da lista de preços, com 5px de largura e cor preta */
+    border: 5px solid black;
+    
+    /* Tamanho da fonte definido como grande */
+    font-size: large;
+    
+    /* Cor de fundo da lista de preços (aquamarine) */
+    background-color: aquamarine;
+    
+    /* Define uma margem superior de 3% */
+    margin-top: 3%;
+    
+    /* Define uma margem inferior de 3% */
+    margin-bottom: 3%;
+}

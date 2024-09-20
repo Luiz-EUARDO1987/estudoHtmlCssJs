@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Declara o tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    
+    <!-- Define que o layout da página deve ser responsivo, ajustando-se ao dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página que aparecerá na aba do navegador -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Incremento</h1>
+
+    <!-- Parágrafo para exibir o valor atual de A (inicialmente 5) -->
+    <p>Valor de A: <span id="valorA">5</span></p> 
+    <!-- NOTA: A tag <spa> está incorreta, deveria ser <span> -->
+    
+    <!-- Parágrafo para exibir o valor atual de B (inicialmente 3) -->
+    <p>Valor de B: <span id="valorB">3</span></p>
+
+    <!-- Parágrafo para exibir o resultado da soma de A e B (inicialmente "total") -->
+    <p>Valor de A + B: <span id="soma">total</span></p>
+
+    <!-- Botão que, ao ser clicado, chama a função incrementoB para incrementar o valor de B -->
+    <button onclick="incrementoB()">incrementar: B</button>
+
+    <!-- Botão que, ao ser clicado, chama a função incrementoA para incrementar o valor de A -->
+    <button onclick="incrementoA()">incrementar: A</button>
+
+    <!-- Botão que, ao ser clicado, chama a função incrementoAB para calcular e exibir a soma de A + B -->
+    <button  onclick="incrementoAB()">soma: A + B</button>
+    <button onclick="comparacaoAMaiorB()">comparacaoAMaiorB</button>
+    <button onclick="comparacaoBMaiorA()">comparacaoBMaiorA</button>
+    <script>
+        // Variáveis globais para armazenar os valores de A, B e o total da soma
+        var A = 5;  // Valor inicial de A
+        var B = 3;  // Valor inicial de B
+        var total;  // Variável para armazenar o total da soma de A + B
+
+        // Função chamada ao clicar no botão "incrementar: B"
+        function incrementoB() {
+            B++; // Incrementa o valor de B em 1
+            // Atualiza o conteúdo HTML da tag <span> com id "valorB" com o novo valor de B
+            document.getElementById("valorB").innerHTML = B;
+            // Aqui parece que o código está incompleto. A linha "atualizar" não está conectada a nada.
+        }
+
+        // Função chamada ao clicar no botão "incrementar: A"
+        function incrementoA() {
+            A++; // Incrementa o valor de A em 1
+            // Atualiza o conteúdo HTML da tag <span> com id "valorA" com o novo valor de A
+            document.getElementById("valorA").innerHTML = A;
+        }
+
+        // Função chamada ao clicar no botão "soma: A + B"
+        function incrementoAB() {
+            // Calcula o total somando os valores de A e B
+            total = A + B;
+
+            // Exibe um alerta com o total da soma de A + B
+            alert("total é: " + total);
+            
+            // Exibe um alerta com o novo valor de B após o incremento (caso B tenha sido incrementado)
+            alert("o valor ficou: " + B);
+            
+            // Tenta atualizar o conteúdo HTML de um elemento com id "incrementoAB" (não existe esse elemento no HTML)
+            document.getElementById("soma").innerText = "o total é: " + total;
+            // O id correto para atualizar deveria ser "resultado" e não "incrementoAB"
+        }
+        function comparacaoAMaiorB()
+        {
+            if (A > B)alert("A  é maior que B");
+            //---------------
+            else if (A < B)alert("A não  é maior que B");
+        }
+        function comparacaoBMaiorA()
+        {
+            if (B > A)alert("B  é maior que A");
+            //---------------
+            else alert("B não  é maior que A");
+        }
+
+    </script>
+</body>
+</html>
