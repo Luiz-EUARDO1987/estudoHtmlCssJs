@@ -1,0 +1,38 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Estilo para o título */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Negrito para termos importantes */
+strong {
+    font-weight: bold;
+    color: #e74c3c; /* Destaque em vermelho */
+}
+
+/* Itálico para conceitos */
+em {
+    font-style: italic;
+    color: #3498db; /* Destaque em azul */
+}
+
+/* Estilo para os parágrafos */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

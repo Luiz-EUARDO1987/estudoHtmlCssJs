@@ -1,0 +1,44 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Estilo para o título */
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo quando o mouse passa por cima dos botões */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para o parágrafo que exibe as mensagens */
+#mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

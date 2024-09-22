@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Teórica - Introdução ao JavaScript</title>
+    <link rel="stylesheet" href="css/desweb03.css"> <!-- Arquivo CSS separado -->
+</head>
+<body>
+
+    <header>
+        <h1>Atividade Teórica – Introdução ao JavaScript</h1>
+    </header>
+
+    <section>
+        <h2>O que é JavaScript?</h2>
+        <p>JavaScript é uma <strong>linguagem de programação</strong> amplamente utilizada para criar <strong>interatividade</strong> e <strong>dinamismo</strong> em páginas web. Ele é uma das tecnologias essenciais no desenvolvimento web, formando, junto com HTML e CSS, a base da web moderna.</p>
+    </section>
+
+    <section>
+        <h2>Onde o JavaScript é utilizado?</h2>
+        <ul>
+            <li><strong>Desenvolvimento Front-End</strong>: Para criar interfaces dinâmicas e interativas no navegador.</li>
+            <li><strong>Desenvolvimento Back-End</strong>: Com Node.js, permitindo o uso de JavaScript no servidor.</li>
+            <li><strong>Aplicações Mobile</strong>: Frameworks como React Native e Ionic permitem o desenvolvimento de aplicativos móveis.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>JavaScript é uma linguagem interpretada ou compilada?</h2>
+        <p>JavaScript é uma <strong>linguagem interpretada</strong>. O código é executado diretamente pelo navegador, linha por linha, sem um processo explícito de compilação.</p>
+
+        <h3>Diferenças entre linguagem interpretada e compilada</h3>
+        <ul>
+            <li><strong>Interpretada</strong>: Executa o código linha por linha diretamente no ambiente (JavaScript, Python).</li>
+            <li><strong>Compilada</strong>: Converte o código em um arquivo executável antes da execução (C, Java).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Como o JavaScript pode modificar o comportamento de uma página web?</h2>
+        <p>JavaScript pode modificar o comportamento de uma página manipulando o DOM, permitindo a alteração de conteúdo, estilos e reações a eventos de forma dinâmica, sem recarregar a página.</p>
+    </section>
+
+    <section>
+        <h2>Variáveis no JavaScript</h2>
+        <p>As palavras-chave usadas para declarar variáveis em JavaScript são:</p>
+        <ul>
+            <li><strong>var</strong>: Escopo de função e sofre "hoisting".</li>
+            <li><strong>let</strong>: Escopo de bloco, introduzido no ES6.</li>
+            <li><strong>const</strong>: Define uma constante, também com escopo de bloco.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>O que são funções em JavaScript?</h2>
+        <p>Funções são blocos de código reutilizáveis que podem ser chamados para executar tarefas. Elas podem receber parâmetros e retornar valores.</p>
+
+        <h3>Exemplo de função:</h3>
+        <pre><code>function saudacao(nome) {
+    return "Olá, " + nome + "!";
+}
+console.log(saudacao("João")); // Exibe: "Olá, João!"
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Eventos em JavaScript</h2>
+        <p>Eventos são ações ou ocorrências que acontecem no navegador e às quais podemos reagir com código JavaScript.</p>
+        
+        <h3>Exemplos de eventos:</h3>
+        <ul>
+            <li><strong>click</strong>: Disparado quando um elemento é clicado.</li>
+            <li><strong>submit</strong>: Disparado quando um formulário é enviado.</li>
+        </ul>
+        
+        <h3>Exemplo de evento:</h3>
+        <pre><code>document.getElementById("meuBotao").addEventListener("click", function() {
+    alert("Botão clicado!");
+});
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>O que é o DOM (Document Object Model)?</h2>
+        <p>O DOM é uma representação em árvore da estrutura HTML da página. Ele permite que o JavaScript manipule elementos HTML, estilos e estruturas.</p>
+        
+        <h3>Exemplo prático:</h3>
+        <pre><code>// Modifica o conteúdo de um elemento com o ID "titulo"
+            document.getElementById("titulo").innerHTML = "Novo Título";
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Bibliotecas e Frameworks em JavaScript</h2>
+        <ul>
+            <li><strong>React</strong>: Biblioteca desenvolvida pelo Facebook para construir interfaces de usuário com componentes reutilizáveis.</li>
+            <li><strong>Angular</strong>: Framework mantido pelo Google, usado para desenvolvimento de aplicações web robustas e escaláveis.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <h3>Fontes Utilizadas</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide" target="_blank">Mozilla Developer Network (MDN) - Guia de JavaScript</a></li>
+            <li><a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript: A Modern Introduction to Programming</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

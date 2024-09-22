@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/desweb03_5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de String e Number</title>
+</head>
+<body>
+    <h1>Teste com Botões</h1>
+      
+    <button id="botaoString">Mensagem com String</button>
+    <button id="botaoNumber">Mensagem com Number</button>
+    <button id="botaoConcatenacao">Mensagem Concatenada</button>
+   
+    <p id="mensagem"></p>
+
+    <script>
+        // 1. Usando string para a mensagem
+        document.getElementById("botaoString").onclick = function() {
+            let mensagem = "Você clicou no botão de String!";
+            document.getElementById("mensagem").innerText = mensagem;
+        }
+
+        // 2. Usando number para a mensagem
+        document.getElementById("botaoNumber").onclick = function() {
+            let numero = 42;
+            document.getElementById("mensagem").innerText = "O número é " + numero;
+        }
+
+        // 3. Concatenando string e number para a mensagem
+        document.getElementById("botaoConcatenacao").onclick = function() {
+            let texto = "O resultado é: ";
+            let numero = 7;
+            document.getElementById("mensagem").innerText = texto + numero;
+        }
+    </script>
+</body>
+</html>

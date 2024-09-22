@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Operações Matemáticas</title>
+    <link rel="stylesheet" href="css/desweb03_1.css"> <!-- Ligando ao CSS -->
+</head>
+<body>
+    <h1>Resultado da Operação</h1>
+    <p>
+        o valor A = <span id="valorA">10</span> <br>
+        o valor B = <span id="valorB">5</span>
+    </p>
+    <p>
+        A + B = <span id="resultado">0</span><br>
+        A - B = <span id="resultado2">0</span><br>
+        A * B = <span id="resultado3">0</span><br>
+        A / B = <span id="resultado4">0</span>
+    </p>
+    <div class="buttons">
+        <button onclick="incrementoA()">Incrementar A</button>
+        <button onclick="incrementoB()">Incrementar B</button>
+        <button onclick="decrementoA()">Decrementar A</button>
+        <button onclick="decrementoB()">Decrementar B</button>
+        <button onclick="soma()">Somar</button>
+        <button onclick="subtracao()">Subtrair</button>
+        <button onclick="multiplicacao()">Multiplicar</button>
+        <button onclick="divisao()">Dividir</button>
+    </div>
+
+    <script>
+        // Declarar e inicializar variáveis
+        let a = 10;
+        let b = 5;
+
+        function incrementoA() {
+            a = a + 1;
+            document.getElementById("valorA").innerHTML = a;
+        }
+
+        function incrementoB() {
+            b = b + 1;
+            document.getElementById("valorB").innerHTML = b;
+        }
+
+        function decrementoA() {
+            a = a - 1;
+            document.getElementById("valorA").innerHTML = a;
+        }
+
+        function decrementoB() {
+            b = b - 1;
+            document.getElementById("valorB").innerHTML = b;
+        }
+
+        function soma() {
+            let resultado = a + b;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+        function subtracao() {
+            let resultado2 = a - b;
+            document.getElementById("resultado2").innerHTML = resultado2;
+        }
+
+        function multiplicacao() {
+            let resultado3 = a * b;
+            document.getElementById("resultado3").innerHTML = resultado3;
+        }
+
+        function divisao() {
+            let resultado4 = a / b;
+            document.getElementById("resultado4").innerHTML = resultado4;
+        }
+    </script>
+</body>
+</html>
